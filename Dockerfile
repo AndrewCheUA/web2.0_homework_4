@@ -12,4 +12,6 @@ RUN pipenv install --system
 
 COPY . /app
 
+VOLUME ["/storage/data.json"]
+
 CMD ["python", "app.py"]
